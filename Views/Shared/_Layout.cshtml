@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - newwebproject</title>
+	<link rel="stylesheet" type="text/css" href="~/css/style1.css" runat="server" />
+</head>
+<body>
+    <header>
+        <div class="@ViewBag.ClassName">
+            <div class="top">
+            <div class="left">
+                <img width="80" height="80" src="~/img/logo.jpg">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index">Revolution</a></li>
+                    <li><a asp-controller="Home" asp-action="products">Products</a></li>
+                    <li><a asp-controller="Home" asp-action="advantages">Advantages</a></li>
+                    <li><a asp-controller="Home" asp-action="contactus">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Grocery website - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/javascript/script.js " asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

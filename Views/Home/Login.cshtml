@@ -1,0 +1,53 @@
+@model coreFormsAndValidations.models.Account
+
+@{
+    ViewData["Title"] = "Login";
+    ViewBag.ClassName = "contact containers";
+   
+}
+    <div class="contact containers">
+        <div class="contactus">
+			<div class="header">
+				<h1>Sign In</h1>
+				
+			</div>
+			<div class="details login">
+				<div class="right">
+					<div class="row">
+					    <div class="col-md-4">
+					        <form method="post" asp-action="Login">
+								<div>
+									<label for="username">Username:</label>
+									<input type="text" id="username" name="username" required>
+								</div>
+								<div>
+									<label for="password">Password:</label>
+									<input type="password" id="password" name="password" required>
+								</div>
+								<button type="submit">Login</button>
+							</form>
+					    </div>
+					</div>
+					<div>
+    					<a asp-action="Index">Back to home</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+     </div>
+
+
+@section Scripts {
+    <script>
+        @{
+            var alertMessage = TempData["AlertMessage"] as string; // Retrieve the alert message from TempData
+        }
+        @if (!string.IsNullOrEmpty(alertMessage))
+        {
+            <text>
+                alert('@alertMessage'); // Display the alert message using JavaScript
+            </text>
+        }
+    </script>
+}

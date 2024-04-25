@@ -1,0 +1,376 @@
+@font-face {
+  font-family: radio_canada;
+  src: url(../font/RadioCanada-Regular.ttf);
+}
+button {
+    border: none;
+    font-family: 'radio_canada';
+    font-size: 30px;
+    color: #b1c552;
+    padding: 18px 35px;
+    border-radius: 36px;
+    background: #fbffed;
+	Box-shadow: 0px 0px 10px gainsboro;
+}
+
+*{
+text-align:center;
+}
+body {
+	width: 100%;
+	margin: 0;
+	background-image: url(../img/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    color: #b1c552;
+    font-family: radio_canada;
+}
+div.title { 
+    padding: 5px 0;
+    width: 100%;
+    color: #606e19;
+}
+
+div.title h1 { 
+	margin: 3px;
+}
+
+div.top{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+    box-shadow: 0px 0px 8px #b1c55252;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+div.top a {
+	text-decoration: none;
+	color: #b1c552;
+}
+
+div.top div.left { 
+	width: 25%;
+}
+
+div.top div.left img { 
+	margin: 0 14px;
+}
+
+div.top div.right { 
+    margin: 14px 18px 14px 227px;
+}
+
+div.top div.right ul { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.top div.right ul li { 
+	margin:0 50px;
+	list-style-type: none;
+	font-size: 20px;
+	padding-bottom: 6px;
+}
+
+div.top div.right ul li:nth-child(1) {
+	border-bottom: solid 2px #92a929;
+    box-shadow: 0 2px 1px #b1c55280;
+}
+
+
+div.main { 
+    margin: 120px 0;
+    width: 100%;
+}
+
+div.main div { 
+	margin: 6px auto;
+}
+div.main div div.container{
+	width: 800px;
+    height: 450px;
+    padding: 10px;
+    border: #c1d365 solid;
+    border-radius: 43px;
+    box-shadow: 0px 0px 7px #c1d365e8;
+}
+div.main div div.container video {
+	border-radius: 30px;
+}
+
+div.main div div.tab {
+	margin: 50px 180px;
+}
+
+div.challenges { 
+	width: 100%;
+    border-top: 1px solid #ecf3d2;
+    padding: 35px 0;
+    margin-bottom: 100px;
+}
+
+div.challenges div.container {
+	display: flex;
+    flex-wrap: wrap;
+    background: #fbffed;
+    margin: 0 100px;
+    border-radius: 60px;
+    Box-shadow: 0px 0px 10px gainsboro;
+}
+
+div.challenges div.left { 
+	width: 40%;
+	display: inline-block;
+    padding: 60px 0px;
+    margin: 40px 0px;
+    border-right: #b1c552 dashed;
+}
+
+div.challenges div.right {
+	width: 45%;
+	display: inline-block;
+	padding: 25px 0;
+	margin-left: 35px;
+}
+
+div.challenges div.left h4 { 
+	font-size: 25px;
+}
+
+div.bottom { 
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0px 8px #b1c55252;
+    background-color: white;
+}
+
+div.bottom div.left { 
+	margin: 0 8px 0 226px;
+    width: 20%;
+}
+
+div.bottom div.right { 
+	width: 50%;
+}
+
+div.bottom div p {
+	margin: 21px 0;
+	color: #076a60;
+}
+
+/* div.containers { 
+height: 100vh;
+} */
+
+div.containers div.top { 
+    background-color: #ebf4c259;
+    box-shadow: 0px 0px 5px #070800;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-image: url(../img/bg4.jpg);
+}
+
+div.contact div.top div.right ul li:nth-child(1) {
+    border-bottom: none;
+    box-shadow:none;
+}
+div.contact div.top div.right ul li:nth-child(4) {
+    border-bottom: solid 2px #92a929;
+    box-shadow: 0 2px 1px #b1c55280;
+}
+
+div.containers div.contactus div.header { 
+	height: 45vh;
+    display: inline-block;
+    width: 100%;
+    background-image: url(../img/bgcart.png);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position: 904px 82px;
+    background-color: #e6f2b7c7;
+    position: relative;
+}
+
+div.containers div.contactus div.header h1 { 
+	margin-top: 125px;
+}
+details.login {
+    position: absolute;
+    width: 100%;
+    bottom: 220px;
+}
+div.containers div.contactus div.details { 
+	position: absolute;
+    width: 100%;
+    bottom: 80px;
+}
+
+div.containers div.contactus div.details div.right { 
+	border-radius: 12px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fbffed;
+    padding: 10px;
+    box-shadow: 0px 0px 10px gainsboro;
+}
+
+div.containers div.contactus div.details div.right ul { 
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.containers div.contactus div.details div.right ul li { 
+	width: 50%;
+    margin: 7px 0px;
+    width: 39%;
+    margin: 7px 0px;
+    border-bottom: dashed 1px #e8f5ae;
+    padding-bottom: 20px;
+}
+
+div.containers div.contactus div.details div.right ul li img { 
+	height: 30px;
+	margin-right: 20px;
+}
+
+div.containers div.contactus div.details div.right ul li a { 
+    color: #b1c552;
+}
+
+div.product div.top div.color { 
+	background-color: #ebf4c259;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+div.product div.top { 
+	position: fixed;
+    top: 0;
+    z-index: 5;
+    background-image: url(../img/bg4.jpg);
+}
+
+div.product div.top div.right ul li:nth-child(1) {
+    border-bottom: none;
+    box-shadow:none;
+}
+div.product div.top div.right ul li:nth-child(2) {
+    border-bottom: solid 2px #92a929;
+    box-shadow: 0 2px 1px #b1c55280;
+}
+
+div.product div.products {
+	height: 200vh;
+	background-image: url(../img/bg4.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.product div.products div.header { 
+	width: 100%;
+    background-color: #e6f2b7c7;
+    padding: 110px 0;
+    position: relative;
+    z-index: 0;
+    margin: 85px 0px;
+	background-image: url(../img/bgcart.png);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position: 904px 82px;
+}
+
+div.product div.products div.header div { 
+	width: 32%;
+    margin-left: 84px;
+}
+
+div.product div.products div.content {
+	width: 100%;
+	bottom: 10px;
+	position: absolute;
+	top: 400px;
+	z-index: 2;
+}
+
+div.product div.products div.items { 
+	background-color: #fbffed;
+    width: 88%;
+    padding: 50px;
+    margin: 0 auto;
+    border-radius: 49px;
+    Box-shadow: 0px 0px 10px gainsboro;
+}
+
+div.product div.products div.items div.grid { 
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.product div.products div.items div.grid div { 
+	background-color: #f1f1f1;
+    width: 14%;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    height: 310px;
+}
+
+div.product div.products div.items div.grid div img { 
+	width: 170px;
+}
+
+div.product div.products div.items div.grid div p { 
+	margin-bottom: 50px;
+}
+
+div.advantage { 
+	height: fit-content;
+	background-color: #e6f2b7c7;
+}
+
+div.advantage div.top { 
+	position: fixed;
+    top: 0;
+    z-index: 5;
+    background-image: url(../img/bg4.jpg);
+    box-shadow: 0px 0px 5px #070800;
+}
+
+div.advantage div.top div.right ul li:nth-child(1) {
+    border-bottom: none;
+    box-shadow:none;
+}
+div.advantage div.top div.right ul li:nth-child(3) {
+    border-bottom: solid 2px #92a929;
+    box-shadow: 0 2px 1px #b1c55280;
+}
+
+div.advantage div.content { 
+    margin: 93px 0px;
+    padding: 85px 150px;
+}
+
+div.advantage div.content div.container { 
+	background-color: #fbffed;
+    height: 57vh;
+    padding: 23px 100px;
+    border-radius: 49px;
+    Box-shadow: 0px 0px 10px gainsboro;
+}
+
+div.advantage div.content div.container h1 { 
+	margin: 30px;
+}
+

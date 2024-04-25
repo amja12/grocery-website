@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewBag.ClassName = "";
+}
+
+
+    <div class="main">
+		<div>
+			<div class="container">
+				<video width="800" height="450" controls autoplay muted>
+	  				<source src="../img/production ID_4121557.mp4" type="video/mp4">
+	  		</div>			
+		</div>
+		<div>
+			<div class="tab">
+				<button onclick="alertFunction()">Apply for free samples</button>
+			</div>
+		</div>
+	</div>
+	<div class="challenges">
+		<div class="container">
+			<div class="left">
+				<h4>Challenges</h4>
+			</div>
+			<div class="right">
+				<div class="one">
+				<h4>THE FOOD IS ENDING</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+				<div class="two">
+				<h4>SOLUTION-Vertical farming</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="left"><h3>Today's Offers</h3></div>
+		<div class="right"><p><i>*Lorem ipsum dolor sit amet, consectetur adipisicing*</i></p></div>
+	</div>
+@section Scripts {
+            @{
+                ViewBag.address = User.FindFirst("Address")?.Value; 
+            }
+            @if (User.Identity.IsAuthenticated)
+            {
+            <script>
+                function alertFunction() {
+                alert("Your order has been place to your address @ViewBag.address");
+                }
+            </script>
+            }
+            else
+            {
+                <script>
+                function alertFunction() {
+                alert("Login first to place your order");
+                }
+                </script>
+            }
+}
